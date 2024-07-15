@@ -1,10 +1,13 @@
 function quote() {
-  let r = Math.floor(Math.random() * quotes.length);
+  let randomindex = Math.floor(Math.random() * quotes.length);
 
-  let q = quotes[r];
-  let y = `"${q.quote}" —${q.author}`;
+  const removedquote = quotes.splice(randomindex, 1);
+  let remov=removedquote[0];
+  const quote = `"${remov.quote}" —${remov.author}`;
 
-  document.getElementById("quote").innerHTML = y;
+ 
+
+  document.getElementById("quote").innerHTML = quote;
 }
 
 const quotes = [
