@@ -2,15 +2,65 @@ function quote() {
   let randomindex = Math.floor(Math.random() * quotes.length);
 
   const removedquote = quotes.splice(randomindex, 1);
-  let remov=removedquote[0];
+  let remov = removedquote[0];
   const quote = `"${remov.quote}" —${remov.author}`;
-
- 
 
   document.getElementById("quote").innerHTML = quote;
 }
 
 const quotes = [
+  {
+    quote: "Don't decrease the goal increase the effort.",
+  author:"NK"
+  },
+  {
+    quote: "You become succesful the moment you start moving towards a worth while goal.",
+  author:"NK"
+  },
+  {
+    quote: "We cannot direct the wind but we can adjust the sails.",
+  author:"NK"
+  },
+  {
+    quote: "A wise man turns chance into good fortune.",
+  author:"NK"
+  },
+  {
+    quote: "No one can predict to what height you can soar.Even you will not now until you spread your wings.",
+  author:"NK"
+  },
+  {
+    quote: "Succesful people know that learning never stops.",
+  author:"NK"
+  },
+  {
+    quote: "The future belongs to those who beleive in the beauty of their dreams.",
+  author:"NK"
+  },
+  {
+    quote: "A smooth sea never made a skillful mariner.",
+  author:"NK"
+  },
+  {
+    quote: "Winners are not people who never fail but people who never quit.",
+  author:"NK"
+  },
+  {
+    quote: "Failer is an opportunity to start again.",
+  author:"NK"
+  },
+  {
+    quote: "Whatever you face in life God is using it to take you to the other side.",
+  author:"NK"
+  },
+  {
+    quote: "I cannot change yesterday i can only make the most of today and look with hope towards tommorow.",
+  author:"NK"
+  },
+  {
+    quote: "An aim in life is the only fortune worth finding.",
+  author:"NK"
+  },
   {
     quote: "It is hard to fail but it is worse never to have tried to succeed.",
     author: "Theodore Roosevelt",
@@ -507,207 +557,236 @@ const quotes = [
   },
   { quote: "Happiness is not by chance, but by choice.", author: "Jim Rohn" },
 
-  
-    {
-      quote: "You will face many defeats in life, but never let yourself be defeated.",
-      author: "Maya Angelou",
-    },
-    {
-      quote: "In three words I can sum up everything I've learned about life: It goes on.",
-      author: "Robert Frost",
-    },
-    {
-      quote: "Life is a long lesson in humility.",
-      author: "J.M. Barrie",
-    },
-    {
-      quote: "To live is the rarest thing in the world. Most people exist, that is all.",
-      author: "Oscar Wilde",
-    },
-    {
-      quote: "The most important thing is to enjoy your life–to be happy–it's all that matters.",
-      author: "Audrey Hepburn",
-    },
-    {
-      quote: "To succeed in life, you need three things: a wishbone, a backbone and a funnybone.",
-      author: "Reba McEntire",
-    },
-    {
-      quote: "We must be willing to let go of the life we planned so as to have the life that is waiting for us.",
-      author: "Joseph Campbell",
-    },
-    {
-      quote: "Life is a succession of lessons which must be lived to be understood.",
-      author: "Ralph Waldo Emerson",
-    },
-    {
-      quote: "Love the life you live. Live the life you love.",
-      author: "Bob Marley",
-    },
-    {
-      quote: "I was taught that the way of progress was neither swift nor easy.",
-      author: "Marie Curie",
-    },
-    {
-      quote: "He who has a why to live for can bear almost any how.",
-      author: "Friedrich Nietzsche",
-    },
-    {
-      quote: "You only live once, but if you do it right, once is enough.",
-      author: "Mae West",
-    },
-    {
-      quote: "The whole secret of a successful life is to find out what is one's destiny to do, and then do it.",
-      author: "Henry Ford",
-    },
-    {
-      quote: "In order to write about life first you must live it.",
-      author: "Ernest Hemingway",
-    },
-    {
-      quote: "Life has no limitations, except the ones you make.",
-      author: "Les Brown",
-    },
-    {
-      quote: "It's your outlook on life that counts. If you take yourself lightly and don't take yourself too seriously, pretty soon you can find the humor in our everyday lives. And sometimes it can be a lifesaver.",
-      author: "Betty White",
-    },
-    {
-      quote: "Live for each second without hesitation.",
-      author: "Elton John",
-    },
-    {
-      quote: "The most wasted of all days is one without laughter.",
-      author: "E. E. Cummings",
-    },
-    {
-      quote: "Start each day with a positive thought and a grateful heart.",
-      author: "Roy Bennett",
-    },
-    {
-      quote: "All you need in this life is ignorance and confidence; then success is sure.",
-      author: "Mark Twain",
-    },
-    {
-      quote: "I believe that if you'll just stand up and go, life will open up for you. Something just motivates you to keep moving.",
-      author: "Tina Turner",
-    },
-    {
-      quote: "Many of life's failures are people who did not realize how close they were to success when they gave up.",
-      author: "Thomas Edison",
-    },
-    {
-      quote: "I have very strong feelings about how you lead your life. You always look ahead, you never look back.",
-      author: "Ann Richards",
-    },
-    {
-      quote: "Life is like riding a bicycle. To keep your balance, you must keep moving.",
-      author: "Albert Einstein",
-    },
-    {
-      quote: "Life shrinks or expands in proportion to one's courage.",
-      author: "Anais Nin",
-    },
-    {
-      quote: "You do not find the happy life. You make it.",
-      author: "Camilla Eyring Kimball",
-    },
-    {
-      quote: "A life is not important except in the impact it has on other lives.",
-      author: "Jackie Robinson",
-    },
-    {
-      quote: "The purpose of life is to live it, to taste experience to the utmost, to reach out eagerly and without fear for newer and richer experience.",
-      author: "Eleanor Roosevelt",
-    },
-    {
-      quote: "The biggest adventure you can ever take is to live the life of your dreams.",
-      author: "Oprah Winfrey",
-    },
-    {
-      quote: "If you own this story you get to write the ending.",
-      author: "Brené Brown",
-    },
-    {
-      quote: "Life is like a coin. You can spend it any way you wish, but you only spend it once.",
-      author: "Lillian Dickinson",
-    },
-    {
-      quote: "Life is about making an impact, not making an income.",
-      author: "Kevin Kruse",
-    },
-    {
-      quote: "There are no regrets in life, just lessons.",
-      author: "Jennifer Aniston",
-    },
-    {
-      quote: "Accept no one's definition of your life, define yourself.",
-      author: "Harvey Fierstein",
-    },
-    {
-      quote: "The longer I live the more beautiful life becomes.",
-      author: "Frank Lloyd Wright",
-    },
-    {
-      quote: "If you love life, don't waste time, for time is what life is made up of.",
-      author: "Bruce Lee",
-    },
-    {
-      quote: "Mistakes are a fact of life. It is the response to the error that counts.",
-      author: "Nikki Giovanni",
-    },
-    {
-      quote: "Life is not a problem to be solved, but a reality to be experienced.",
-      author: "Soren Kierkegaard",
-    },
-    {
-      quote: "Your time is limited, so don't waste it living someone else's life.",
-      author: "Steve Jobs",
-    },
-    {
-      quote: "If everything was perfect, you would never learn and you would never grow.",
-      author: "Beyoncé",
-    },
-    {
-      quote: "If we don't change, we don't grow. If we don't grow, we aren't really living.",
-      author: "Gail Sheehy",
-    },
-    {
-      quote: "I have learned that success is to be measured not so much by the position that one has reached in life as by the obstacles which he has overcome while trying to succeed.",
-      author: "Booker T. Washington",
-    },
-    {
-      quote: "Life doesn't have to be perfect to be wonderful.",
-      author: "Annette Funicello",
-    },
-    {
-      quote: "The big lesson in life, baby, is never be scared of anyone or anything.",
-      author: "Frank Sinatra",
-    },
-    {
-      quote: "I think I've discovered the secret of life – you just hang around until you get used to it.",
-      author: "Charles Schulz",
-    },
-    {
-      quote: "Life is very interesting... in the end, some of your greatest pains, become your greatest strengths.",
-      author: "Drew Barrymore",
-    },
-    {
-      quote: "Challenges are what make life interesting and overcoming them is what makes life meaningful.",
-      author: "Joshua J. Marine",
-    },
-    {
-      quote: "Make it a rule of life never to regret and never to look back. Regret is an appalling waste of energy; you can't build on it; it's only good for wallowing in.",
-      author: "Katherine Mansfield",
-    },
-    {
-      quote: "The most important trip you may take in life is meeting people halfway.",
-      author: "Henry Boye",
-    },
-    {
-      quote: "Life isn't about finding yourself. Life is about creating yourself.",
-      author: "George Bernard Shaw",
-    }
-  
-  
+  {
+    quote:
+      "You will face many defeats in life, but never let yourself be defeated.",
+    author: "Maya Angelou",
+  },
+  {
+    quote:
+      "In three words I can sum up everything I've learned about life: It goes on.",
+    author: "Robert Frost",
+  },
+  {
+    quote: "Life is a long lesson in humility.",
+    author: "J.M. Barrie",
+  },
+  {
+    quote:
+      "To live is the rarest thing in the world. Most people exist, that is all.",
+    author: "Oscar Wilde",
+  },
+  {
+    quote:
+      "The most important thing is to enjoy your life–to be happy–it's all that matters.",
+    author: "Audrey Hepburn",
+  },
+  {
+    quote:
+      "To succeed in life, you need three things: a wishbone, a backbone and a funnybone.",
+    author: "Reba McEntire",
+  },
+  {
+    quote:
+      "We must be willing to let go of the life we planned so as to have the life that is waiting for us.",
+    author: "Joseph Campbell",
+  },
+  {
+    quote:
+      "Life is a succession of lessons which must be lived to be understood.",
+    author: "Ralph Waldo Emerson",
+  },
+  {
+    quote: "Love the life you live. Live the life you love.",
+    author: "Bob Marley",
+  },
+  {
+    quote: "I was taught that the way of progress was neither swift nor easy.",
+    author: "Marie Curie",
+  },
+  {
+    quote: "He who has a why to live for can bear almost any how.",
+    author: "Friedrich Nietzsche",
+  },
+  {
+    quote: "You only live once, but if you do it right, once is enough.",
+    author: "Mae West",
+  },
+  {
+    quote:
+      "The whole secret of a successful life is to find out what is one's destiny to do, and then do it.",
+    author: "Henry Ford",
+  },
+  {
+    quote: "In order to write about life first you must live it.",
+    author: "Ernest Hemingway",
+  },
+  {
+    quote: "Life has no limitations, except the ones you make.",
+    author: "Les Brown",
+  },
+  {
+    quote:
+      "It's your outlook on life that counts. If you take yourself lightly and don't take yourself too seriously, pretty soon you can find the humor in our everyday lives. And sometimes it can be a lifesaver.",
+    author: "Betty White",
+  },
+  {
+    quote: "Live for each second without hesitation.",
+    author: "Elton John",
+  },
+  {
+    quote: "The most wasted of all days is one without laughter.",
+    author: "E. E. Cummings",
+  },
+  {
+    quote: "Start each day with a positive thought and a grateful heart.",
+    author: "Roy Bennett",
+  },
+  {
+    quote:
+      "All you need in this life is ignorance and confidence; then success is sure.",
+    author: "Mark Twain",
+  },
+  {
+    quote:
+      "I believe that if you'll just stand up and go, life will open up for you. Something just motivates you to keep moving.",
+    author: "Tina Turner",
+  },
+  {
+    quote:
+      "Many of life's failures are people who did not realize how close they were to success when they gave up.",
+    author: "Thomas Edison",
+  },
+  {
+    quote:
+      "I have very strong feelings about how you lead your life. You always look ahead, you never look back.",
+    author: "Ann Richards",
+  },
+  {
+    quote:
+      "Life is like riding a bicycle. To keep your balance, you must keep moving.",
+    author: "Albert Einstein",
+  },
+  {
+    quote: "Life shrinks or expands in proportion to one's courage.",
+    author: "Anais Nin",
+  },
+  {
+    quote: "You do not find the happy life. You make it.",
+    author: "Camilla Eyring Kimball",
+  },
+  {
+    quote:
+      "A life is not important except in the impact it has on other lives.",
+    author: "Jackie Robinson",
+  },
+  {
+    quote:
+      "The purpose of life is to live it, to taste experience to the utmost, to reach out eagerly and without fear for newer and richer experience.",
+    author: "Eleanor Roosevelt",
+  },
+  {
+    quote:
+      "The biggest adventure you can ever take is to live the life of your dreams.",
+    author: "Oprah Winfrey",
+  },
+  {
+    quote: "If you own this story you get to write the ending.",
+    author: "Brené Brown",
+  },
+  {
+    quote:
+      "Life is like a coin. You can spend it any way you wish, but you only spend it once.",
+    author: "Lillian Dickinson",
+  },
+  {
+    quote: "Life is about making an impact, not making an income.",
+    author: "Kevin Kruse",
+  },
+  {
+    quote: "There are no regrets in life, just lessons.",
+    author: "Jennifer Aniston",
+  },
+  {
+    quote: "Accept no one's definition of your life, define yourself.",
+    author: "Harvey Fierstein",
+  },
+  {
+    quote: "The longer I live the more beautiful life becomes.",
+    author: "Frank Lloyd Wright",
+  },
+  {
+    quote:
+      "If you love life, don't waste time, for time is what life is made up of.",
+    author: "Bruce Lee",
+  },
+  {
+    quote:
+      "Mistakes are a fact of life. It is the response to the error that counts.",
+    author: "Nikki Giovanni",
+  },
+  {
+    quote:
+      "Life is not a problem to be solved, but a reality to be experienced.",
+    author: "Soren Kierkegaard",
+  },
+  {
+    quote:
+      "Your time is limited, so don't waste it living someone else's life.",
+    author: "Steve Jobs",
+  },
+  {
+    quote:
+      "If everything was perfect, you would never learn and you would never grow.",
+    author: "Beyoncé",
+  },
+  {
+    quote:
+      "If we don't change, we don't grow. If we don't grow, we aren't really living.",
+    author: "Gail Sheehy",
+  },
+  {
+    quote:
+      "I have learned that success is to be measured not so much by the position that one has reached in life as by the obstacles which he has overcome while trying to succeed.",
+    author: "Booker T. Washington",
+  },
+  {
+    quote: "Life doesn't have to be perfect to be wonderful.",
+    author: "Annette Funicello",
+  },
+  {
+    quote:
+      "The big lesson in life, baby, is never be scared of anyone or anything.",
+    author: "Frank Sinatra",
+  },
+  {
+    quote:
+      "I think I've discovered the secret of life – you just hang around until you get used to it.",
+    author: "Charles Schulz",
+  },
+  {
+    quote:
+      "Life is very interesting... in the end, some of your greatest pains, become your greatest strengths.",
+    author: "Drew Barrymore",
+  },
+  {
+    quote:
+      "Challenges are what make life interesting and overcoming them is what makes life meaningful.",
+    author: "Joshua J. Marine",
+  },
+  {
+    quote:
+      "Make it a rule of life never to regret and never to look back. Regret is an appalling waste of energy; you can't build on it; it's only good for wallowing in.",
+    author: "Katherine Mansfield",
+  },
+  {
+    quote:
+      "The most important trip you may take in life is meeting people halfway.",
+    author: "Henry Boye",
+  },
+  {
+    quote:
+      "Life isn't about finding yourself. Life is about creating yourself.",
+    author: "George Bernard Shaw",
+  },
 ];
